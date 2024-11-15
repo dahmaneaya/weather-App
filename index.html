@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Weather App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    </head>
+    <body class="body">
+        <div class="container">
+            <div class="weather-app">
+                <form id="mybtn">
+                    <input type="text" placeholder="Entere your city">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+           <section class="result">
+            <figure class="city">
+                <figcaption id="city">London</figcaption>
+            </figure>
+            <figure id="temperature">
+                <img src=https://openweathermap.org/img/wn/10d@4x.png>
+                    <figcaption >
+                        <span id="temp">31</span>
+                        <sup>o</sup>c
+                    </figcaption>
+                </figure>
+                <p id="description">
+                    Overcast clouds
+                </p>
+                <ul>
+                    <li>
+                        <span >Clouds</span>
+                        <i class="fa-solid fa-cloud"></i>
+                        <span id="clouds">98</span>%
+                    </li>
+                    <li>
+                        <span >Humidity</span>
+                        <i class="fa-solid fa-droplet"></i>
+                        <span id="Humidity">55</span>%
+                    </li>
+                    <li>
+                        <span >Pressure</span>
+                    <i class="fa-solid fa-gauge"></i>
+                    <span id="Pressure">1001</span>hPa
+                </li>
+                </ul>
+           </section>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
+
